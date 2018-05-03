@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="row">
+        <img id="cartoonBurger" src="./assets/img/burger-304707.svg" alt="Run of the mill cartoon cheese burger">
+    </div>
+    <h1>Eat-Da-Burger!</h1>
+    <div class="row">
+        <div class="col">
+            <ul>
+                {{#each burgers}}
+                <li>{{this.id}}. {{this.burger_name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <form id="create-form" class="button-size">
+  <textarea type="text" id="newBurger" name="name"></textarea>
+  <button type="submit">Submit</button>
+</form>
+<p>Enter a burger you want to eat and Click the "Submit" button.</p>
+
+
+
+
+</div>
